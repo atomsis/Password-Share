@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title%}Password manager{%endblock%}</title>
+    <link rel="stylesheet" href="example-path/css_file.css">
+</head>
+<body>
+<div>
+    <span>
+        <a href="{% url 'password:list_passwords'%}">
+            🤖 All passwords 🤖
+        </a>
+    </span>
+    <span>
+        <a href="{% url 'password:create_password'%}">
+            👾Create New Password👾
+        </a>
+    </span>
+</div>
+{% block content %}
+{% endblock content %}
+</body>
+</html>
